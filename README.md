@@ -15,7 +15,8 @@ The **Workout Planner API** is a RESTful web API designed to manage workouts and
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Database Schema](#database-schema)
-
+- [Contributing](#contributing)
+- 
 ## Installation
 ### Prerequisites
 
@@ -47,7 +48,7 @@ dotnet run --project WorkoutPlanner.Api
 The application will start and be accessible at https://localhost:5001 by default.
 
 ###Access Swagger UI
-Navigate to https://localhost:[selectedPort]/swagger to explore and test the API endpoints through Swagger UI.
+Navigate to https://localhost:5001/swagger to explore and test the API endpoints through Swagger UI.
 
 ## API Endpoints
 
