@@ -63,5 +63,6 @@ app.Map("/error", (HttpContext httpContext) =>
 
 app.MapWorkoutEndpoints();
 app.MapExerciseEndpoints();
+app.MapCompleteExerciseEndpoints();
 
 app.Run();
