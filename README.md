@@ -16,7 +16,7 @@ The **Workout Planner API** is a RESTful web API designed to manage workouts and
 - [API Endpoints](#api-endpoints)
 - [Database Schema](#database-schema)
 - [Contributing](#contributing)
-- 
+  
 ## Installation
 ### Prerequisites
 
