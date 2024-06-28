@@ -23,7 +23,7 @@ public static class WorkoutEndpoints
 
         app.MapGet("/workouts", async (WorkoutDatabase db) =>
         {
-            return await db.Workouts.Include(w => w.Exercises).ToListAsync();
+            return await db.Workouts.ToListAsync();
         })
         .WithTags("Workout")
         .WithName("GetWorkouts")
@@ -33,7 +33,7 @@ public static class WorkoutEndpoints
 
         app.MapGet("/workouts/{id}", async (Guid id, WorkoutDatabase db) =>
         {
-            return await db.Workouts.Include(w => w.Exercises).FirstOrDefaultAsync(w => w.Id == id)
+            return await db.Workouts.FirstOrDefaultAsync(w => w.Id == id)
                 is { } workout ? Results.Ok(workout) : Results.NotFound();
         })
         .WithTags("Workout")
